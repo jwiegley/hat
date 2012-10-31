@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hat by OlafChitil</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Hat</h1>
+        <p class="header">The Haskell tracer - generating and viewing Haskell execution traces</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/OlafChitil/hat/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/OlafChitil/hat/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/OlafChitil/hat">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/OlafChitil">OlafChitil</a></p>
+
+
+      </header>
+      <section>
+        <p>Hat is a source-level tracer for Haskell, the standard lazy functional programming language. Hat gives access to detailed, otherwise invisible information about a computation.</p>
+
+<p>Hat helps locating errors in programs. Furthermore, it is useful for understanding how a (correct) program works, especially for teaching and program maintenance. Hat is not a time or space profiler. Hat can be used for programs that terminate normally, that terminate with an error message or that terminate when interrupted by the programmer.</p>
+
+<h3>How do I use it?</h3>
+
+<p>Tracing a program with Hat consists of two phases: </p>
+
+<p>First you run your program such that it additionally writes a trace to file. 
+To do so you use <em>hat-trans</em> to translate all the source modules <em>Module</em> of your Haskell program into tracing versions <em>Hat.Module</em>. You compile these and when run the program does exactly the same as the original program except for additionally writing a trace to file.</p>
+
+<p>Second, after the program has terminated, you view the trace with a browsing tool. The trace consists of high-level information about the computation. It describes each reduction, that is, the replacements of an instance of a left-hand side of an equation by an instance of its right-hand side, and the relation of the reduction to other reductions. Because the trace describes the whole computation, it is huge. Hat comes with several tools to selectively view the fragments of the trace that are of interest. Each tool shows fragments of the computation in a particular way, highlighting a specific aspect.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
