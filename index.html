@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Hat : The Haskell tracer - generating and viewing Haskell execution traces" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>Hat</title>
+    <title>Hat by OlafChitil</title>
   </head>
 
   <body>
+    <header>
+      <div class="inner">
+        <h1>Hat</h1>
+        <h2>The Haskell tracer - generating and viewing Haskell execution traces</h2>
+        <a href="https://github.com/OlafChitil/hat" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/OlafChitil/hat">View on GitHub</a>
-
-          <h1 id="project_title">Hat</h1>
-          <h2 id="project_tagline">The Haskell tracer - generating and viewing Haskell execution traces</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/OlafChitil/hat/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/OlafChitil/hat/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Hat is a source-level tracer for the programming language <a href="http://www.haskell.org">Haskell</a>. Hat gives access to detailed, otherwise invisible information about a computation.</p>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>Hat is a source-level tracer for the programming language <a href="http://www.haskell.org">Haskell</a>. Hat gives access to detailed, otherwise invisible information about a computation.</p>
 
 <p>Hat helps locating errors in programs. Furthermore, it is useful for understanding how a (correct) program works, especially for teaching and program maintenance. Hat is not a time or space profiler. Hat can be used for programs that terminate normally, that terminate with an error message or that terminate when interrupted by the programmer.</p>
 
@@ -75,7 +72,7 @@ last' [x] = x
 
 <ul>
 <li>
-<strong>Hat-observe</strong> (inspired by <a href="http://haskell.org/hood">Hood</a>) <br>
+<strong>Hat-observe</strong> (inspired by <a href="http://www.ittc.ku.edu/csdl/fpg/Tools/Hood">Hood</a>) <br>
 
 Hat-observe is an interactive tool that shows how top-level functions
 are used.  That is, for a given top-level function name it shows
@@ -180,7 +177,7 @@ last' [x] = x
 
 </li>
 <li>
-<strong>Hat-detect</strong> (inspired by <a href="http://www.ida.liu.se/~henni/">Freja</a>) <br>
+<strong>Hat-detect</strong> (inspired by Freja) <br>
 Hat-detect is an interactive tool that enables the semi-automatic
 location of an error in a program by answering a sequence of yes/no
 questions.  Each question asked by hat-detect concerns the reduction
@@ -256,7 +253,7 @@ $
 There are a few small programs for exploring tracing in the "examples" folder.</p>
 
 <ul><li>
-<a href="www.cs.york.ac.uk/fp/ART/">Outdated but still useful documentation at York</a>
+<a href="http://www.cs.york.ac.uk/fp/ART/">Outdated but still useful documentation at York</a>
 </li></ul><h3>Development</h3>
 
 <p>The following work is ongoing or planned:</p>
@@ -302,18 +299,25 @@ Hat/MyProgram
 <pre>
 $ hat-trail / hat-observe / hat-explore /...   MyProgram
 </pre>
-      </section>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/OlafChitil/hat/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/OlafChitil/hat/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/OlafChitil/hat"></a> is maintained by <a href="https://github.com/OlafChitil">OlafChitil</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Hat maintained by <a href="https://github.com/OlafChitil">OlafChitil</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+  
   </body>
 </html>
